@@ -1,0 +1,81 @@
+.editing{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)),url('../../../assets/edit-bg.jpg');
+}
+
+.editing span {
+    color: #ccc;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,31,120,1) 0%, rgba(210,31,74,0.97) 93%);
+}
+
+.r-link a {
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-top: 20px;
+    color: #ccc;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,31,120,1) 0%, rgba(210,31,74,0.97) 93%);
+    text-decoration: none;
+}
+
+.r-link .insta {
+    margin-left: 20px;
+}
+
+.sample-video {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.set-display {
+    width: auto;
+    height: 400px;
+}
+
+.display {
+    display: none;
+}
+
+.display-button,
+.close-button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #444;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.display-button:hover,
+.close-button:hover {
+    background-color: #666;
+}
+
+
+@media (max-width:768px) {
+    .editing-content{
+        display: grid;
+        text-wrap: wrap;
+        place-items: center;
+        margin: 10px auto;
+
+        & p{
+            font-size: 14px;
+        }
+    }
+}

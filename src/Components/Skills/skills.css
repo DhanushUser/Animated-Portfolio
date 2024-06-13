@@ -1,0 +1,49 @@
+.skill-bg{
+    
+
+    & img{
+        opacity: 0.80;
+        background-size: cover !important;
+        background-position: center !important;
+        
+    }
+}
+
+.skills span{
+    color: #ccc;
+    background: rgb(2,0,36) ;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,31,120,1) 0%, rgba(210,31,74,0.966999299719888) 93%);
+}
+.skill-card{
+    animation: Appear linear;
+    animation-timeline: view();
+    animation-range: entry 1% cover;
+    transition: .5s;
+}
+
+.skill-card:hover img{
+    opacity: 0.30;
+    
+}
+.skill-link .btn{
+    color: #ccc;
+    background: rgb(2,0,36) ;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,31,120,1) 0%, rgba(210,31,74,0.966999299719888) 93%);
+}
+
+@media (max-width:640px) {
+    .grid-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+
+@media (max-width:620px) {
+    .grid-card{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr ;
+        
+    }
+}

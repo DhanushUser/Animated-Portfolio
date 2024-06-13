@@ -1,0 +1,43 @@
+
+.card-top img{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(11, 35, 114, 0.7),rgba(5, 21, 74, 0.7));
+    opacity: 0;
+    transition: .5s;
+}
+.item-data:hover .card-content{
+    opacity: 1;
+}
+.item-data{
+    animation: Appear linear;
+    animation-timeline: view();
+    animation-range: entry 1% cover;
+    background: #101720;
+   
+    transition: .5s;
+}
+.item-data:hover{
+    transform: scale(.90);
+}
+.project span{
+    color: #ccc;
+    background: rgb(2,0,36) ;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,31,120,1) 0%, rgba(210,31,74,0.966999299719888) 93%);
+}
+
+.card-bottom a{
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ccc;
+    /* background: rgb(2,0,36) ;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(31, 52, 136) 0%, rgba(20, 59, 188, 0.967) 93%); */
+}

@@ -1,0 +1,107 @@
+.hero-bg{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    background-position: center;
+    background-size: cover;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../../assets/hack.jpg);
+}
+
+.hero-right{
+    animation:  translateRight 1s;
+}
+.hero-left img{
+    filter: contrast(1.1);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    width: max(700px,300px) !important;
+    /* animation: translateLeft  1s; */
+    animation: pulse 2s infinite;
+    animation-delay: 2s;
+    
+}
+img{
+    width: 100%;
+}
+
+.hero-right h1{
+    font-weight: 600;
+    background: linear-gradient(to right, #f017ab,#8b2948);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation-delay: .9s;
+}
+.resume{
+
+    & button{
+        font-size: 14px;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-weight: 500;
+        transition: .5s;
+
+
+        &:hover{
+            background: none;
+            border: 1px solid white;
+            color: white;
+        }
+    }
+}
+.social-icons {
+    transition: .5s;
+}
+
+.social-icons .bx{
+    border-radius: 50%;
+    font-size: 21px;
+    padding: 7px;
+    border: 1px solid white;
+    transition: .5s;
+    
+
+    &.active{
+        background: linear-gradient(to bottom , #f017ab, #8b2948);
+        color: white;
+        border: none;
+    }
+
+    &:hover{
+        border: none;
+        background: linear-gradient(to bottom , #f017ab, #8b2948);
+        color: white;
+    }
+}
+
+@media (max-width:568px) {
+    .hero{
+        margin-top: 15vh !important;
+        margin-left: 18vw;
+    }
+    .hero-right h1,h3,p{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .hero-right p{
+       
+        font-size: 15px;
+    }
+}
+
+@media (max-width:568px) {
+    .hero-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-left img{
+        margin-left: -100px;
+    }
+}

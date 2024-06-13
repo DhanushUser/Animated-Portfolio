@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Outfit", sans-serif;
+    scroll-behavior: smooth;
+    
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #0c0c0c;  /* 101720  0c0c0c*/
+    color: #EEEEEE;
+    overflow-x: hidden;
+    animation: fadeIn .2s;
+    animation-duration: .12s;
+    
+}
+button{
+    
+    padding: 10px 20px ;
+    background-color: #EEEEEE;
+    color: black;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes translateLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes translateRight {
+    0%{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes Appear{
+    from{
+        opacity: 0.40;
+        scale: 0.65;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+@keyframes pulse {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+

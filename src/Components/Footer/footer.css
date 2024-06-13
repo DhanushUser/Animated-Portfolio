@@ -1,0 +1,21 @@
+.footer-details{
+    margin-bottom: 20px !important;
+
+    & p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:658px) {
+    .footer-details{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        & p{
+            font-size: 14px;
+        }
+    }
+}
