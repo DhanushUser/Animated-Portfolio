@@ -98,4 +98,7 @@
         width: auto;
         height: auto;
     }
+    .r-link{
+        margin-bottom: 10vh;
+    }
 }
