@@ -14,19 +14,25 @@
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,31,120,1) 0%, rgba(210,31,74,0.97) 93%);
 }
 
+.r-link{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    min-width: fit-content;
+}
+
 .r-link a {
+    text-align: center;
+    max-width: 200px;
+    margin-inline: 5px;
     padding: 5px 10px;
     border-radius: 6px;
     margin-top: 20px;
+    flex-grow: 1;
     color: #ccc;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,31,120,1) 0%, rgba(210,31,74,0.97) 93%);
     text-decoration: none;
 }
-
-.r-link .insta {
-    margin-left: 20px;
-}
-
 .sample-video {
     width: 50%;
     display: flex;
@@ -36,6 +42,8 @@
 
 .video-container {
     display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
 }
@@ -77,5 +85,17 @@
         & p{
             font-size: 14px;
         }
+    }
+}
+
+@media (max-width:568px) {
+    .close-button {
+        min-width: fit-content;
+        font-size: 14px;
+        padding: 5px 10px !important;
+    }
+    .set-display {
+        width: auto;
+        height: auto;
     }
 }

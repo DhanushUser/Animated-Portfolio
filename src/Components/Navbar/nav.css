@@ -3,6 +3,9 @@
     top: 0;
     z-index: 100 !important;
     animation: slideDown 1s;
+    display: flex;
+    flex: 1;
+    min-width: fit-content;
 }
 ul {
     display: flex;
@@ -60,6 +63,9 @@ ul {
             flex-wrap: nowrap;
         }
     }
+    .list{
+        justify-content: center;
+    }
 }
 
 
@@ -67,6 +73,7 @@ ul {
     .nav-right{
         position: fixed;
         top: 10vh;
+        width: 150px;
         right: 80px;
         display: block;
         border-radius: 8px;
@@ -93,6 +100,7 @@ ul {
     }
     .menu-icon{
         position: fixed;
+        top: 20px;
         right: 0;
        margin-right: 10vw;
         display: block;
@@ -101,6 +109,9 @@ ul {
     }
     .nav-detail{
         display: none;
+    }
+    .hitme{
+        justify-content: center;
     }
     
 }

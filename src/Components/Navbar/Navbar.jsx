@@ -18,16 +18,16 @@ const Navbar = () => {
         <div className="logo">
            <Link to={'/'}> <h2 className='text-3xl font-[600]'>Dhanush.</h2></Link>
         </div>
-       <div className={menu ? "nav-detail mx-6" : "nav-right lg:flex md:flex lg:justify-evenly md:justify-evenly sm:justify-between shadow-lg"}>
-        <ul className='mt-2 uppercase'>
+       <div className={menu ? "nav-detail lg:mx-6 md:mx-1 sm:mx-6" : "nav-right lg:flex md:flex lg:justify-evenly md:justify-evenly sm:justify-between shadow-lg"}>
+        <ul className='list mt-2 uppercase'>
               <a href="#home"><li className='active'>Home</li> </a>
                <a href="#about"> <li>About</li> </a>
                <a href="#project"> <li>Projects</li> </a>
                <a href="#skills"> <li>Skills</li> </a>
                <a href="#contact"> <li>contact</li> </a>
             </ul>
-            <div className='flex flex-nowrap  '>
-                <a href="#contact"><button className='btn min-w-fit lg:px-4 lg:py-2 mx-10  text-sm rounded-[50px]'>Hit me!</button></a>
+            <div className='hitme flex flex-nowrap  '>
+                <a href="#contact"><button className='btn min-w-fit lg:px-4 lg:py-2 lg:mx-10 md:mx-1  text-sm rounded-[50px]'>Hit me!</button></a>
             </div>
        </div>
        <div onClick={toggleMenu}  className="menu-icon" >
