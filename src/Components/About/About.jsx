@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import logo from "../../assets/profile.jpg";
+import About_l from "../../assets/about-.png";
 
 const About = () => {
   return (
@@ -11,8 +11,8 @@ const About = () => {
       <div className="flex">
         <div className="about-left w-1/2 mx-3">
           <img
-            className="border-[2px] border-white object-cover bg-center ml-[10vw]"
-            src={logo}
+            className=" object-cover bg-center ml-[10vw]"
+            src={About_l}
             alt=""
           />
         </div>

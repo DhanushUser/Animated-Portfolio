@@ -15,7 +15,7 @@
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,31,120,1) 0%, rgba(210,31,74,0.966999299719888) 93%);
 }
 .skill-card{
-    animation: fadeIn linear;
+    animation: Appear linear;
     animation-timeline: view();
     animation-range: entry 1% cover;
     transition: .5s;
