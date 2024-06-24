@@ -4,6 +4,7 @@ import video_1 from '../../../assets/Video/maxwell.mp4';
 import two from '../../../assets/Video/two.mp4';
 import Edit_1 from '../../../assets/edit-1.jpg';
 import Slider from "react-slick";
+import { useNavigate } from "react-router-dom";
 
 
 function SampleNextArrow(props) {
@@ -29,6 +30,12 @@ function SamplePrevArrow(props) {
 }
 
 const Editing = () => {
+
+  const navigate = useNavigate();
+
+    const handleBack = ()=>{
+      navigate(-1);
+    }
 
   const settings = {
     dots: true,
@@ -87,7 +94,12 @@ const Editing = () => {
 
   return (
     <div className="editing">
-      <div className="flex justify-center items-center mt-[18vh]">
+
+      <div className="arrow">
+        <button onClick={handleBack}><i class='bx bx-left-arrow-alt'></i></button>
+      </div>
+
+      <div className="flex justify-center items-center mt-[20vh]">
         <h2 className="text-2xl mb-[100px] font-[500]">
           Video <span className="font-[500] p-1 rounded">Editing</span>
         </h2>

@@ -9,6 +9,25 @@
     
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../../assets/hack.jpg);
 }
+.nav-home{
+    position: fixed;
+    background: linear-gradient(to right, #f017ab,#8b2948);
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    bottom: 0;
+    right: 0;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 50;
+    text-align: center;
+    transition: .5s;
+}
+.opacity{
+    display: none;
+}
 
 .hero-right{
     animation:  translateRight 1s;

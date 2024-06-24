@@ -19,6 +19,7 @@ import bee from '../../../assets/photo/bee.jpg'
 import coin from '../../../assets/photo/coin.jpg'
 import creative_1 from '../../../assets/photo/creative-1.jpg'
 import creative_2 from '../../../assets/photo/creative-2.jpg'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -97,12 +98,22 @@ const Photography = () => {
     ]
   };
 
+  const navigate = useNavigate();
+
+    const handleBack = ()=>{
+      navigate(-1);
+    }
+
 
   return (
     <div className='photography'>
         <div className='flex justify-center items-center mt-[20vh]'>
           <h2 className='text-2xl mb-[100px] font-[500]'>Mobile <span className='font-[500] p-1 rounded'>Shots</span></h2>
         </div>
+
+        <div className="arrow">
+        <button onClick={handleBack}><i class='bx bx-left-arrow-alt'></i></button>
+      </div>
 
     <div className="slider-container mx-[70px]">
 

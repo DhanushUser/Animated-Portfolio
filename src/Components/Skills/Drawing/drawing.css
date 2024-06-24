@@ -22,10 +22,33 @@
     background: rgb(2,0,36) ;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,31,120,1) 0%, rgba(210,31,74,0.966999299719888) 93%);
 }
+.arrow{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+
+    & button{
+        background: #ffffff1a;
+        backdrop-filter: blur(50px);
+        border: 1px solid white;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 15px
+    }
+}
 
 
 @media (max-width:900px) {
     .slider-container img:nth-child(1){
         margin-left: 0px;
+    }
+}
+
+@media (max-width:568px) {
+    .arrow{
+        left: 10%;
+        padding: 2px;
+        font-size: 10px;
     }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./hero.css";
 import About from "../About/About";
 import Project from "../Projects/Project";
@@ -11,8 +11,17 @@ import Dresume from '../../assets/DhanushResume.pdf'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './toastify-custom.css'; // Import custom CSS
+import { Link } from "react-router-dom";
 
 const Hero = () => {
+
+  const [sticky,setSticky] = useState(false);
+
+  useEffect(()=>{
+    window.addEventListener('scroll',()=>{
+      window.scrollY > 50 ? setSticky(true) : setSticky(false);
+    })
+  },[]);
 
   
 
@@ -56,6 +65,10 @@ const Hero = () => {
             <a href="https://www.linkedin.com/in/dhanush-s-7ba230277/" target="_blank"><i className='active bx bxl-linkedin'></i></a>
             <a href="https://github.com/DhanushUser" target="_blank"><i className='bx bxl-github'></i></a>
           </div>
+        </div>
+
+        <div className={sticky ? "nav-home" : "opacity"}>
+            <a href="#home"><i class='bx bx-chevrons-up'></i></a>
         </div>
       </div>
       <ToastContainer theme="dark"/>

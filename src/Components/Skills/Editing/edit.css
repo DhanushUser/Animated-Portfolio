@@ -74,6 +74,11 @@
     background-color: #666;
 }
 
+.editing .arrow{
+    top: 20%;
+    left: 30%;
+}
+
 
 @media (max-width:768px) {
     .editing-content{
@@ -100,5 +105,8 @@
     }
     .r-link{
         margin-bottom: 10vh;
+    }
+    .editing .arrow{
+        left: 15%;
     }
 }

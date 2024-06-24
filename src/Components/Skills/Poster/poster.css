@@ -3,3 +3,12 @@
     background: rgb(2,0,36) ;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,31,120,1) 0%, rgba(210,31,74,0.966999299719888) 93%);
 }
+.poster .arrow{
+    top: 27%;
+}
+
+@media (max-width:568px) {
+    .poster .arrow{
+        top: 25%;
+    }
+}

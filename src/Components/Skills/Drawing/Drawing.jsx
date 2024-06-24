@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 import one from '../../../assets/1.jpg'
 import two from '../../../assets/2.jpg'
 import three from '../../../assets/3.jpeg'
@@ -11,6 +12,7 @@ import four from '../../../assets/4.jpeg'
 import five from '../../../assets/5.jpg'
 import six from '../../../assets/6.jpg'
 import seven from '../../../assets/6.jpg'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -39,7 +41,7 @@ function SamplePrevArrow(props) {
 
 const Drawing = () => {
 
-
+    
   
     const settings = {
       dots: true,
@@ -86,14 +88,21 @@ const Drawing = () => {
       ]
     };
 
-    
+    const navigate = useNavigate();
 
+    const handleBack = ()=>{
+      navigate(-1);
+    }
   
 
   return (
     <div className='drawing '>
       <div className='flex justify-center items-center mt-[30vh]'>
         <h2 className='text-2xl mb-[100px] font-[500]'>Portrait <span className='font-[500] p-1 rounded'>Drawings</span></h2>
+      </div>
+
+      <div className="arrow">
+        <button onClick={handleBack}><i class='bx bx-left-arrow-alt'></i></button>
       </div>
 
       <div className="slider-container mx-[70px]">

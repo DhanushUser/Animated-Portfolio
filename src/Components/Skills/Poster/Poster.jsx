@@ -5,6 +5,7 @@ import post_3 from '../../../assets/post-3.jpg'
 import post_4 from '../../../assets/post-4.png'
 import Slider from 'react-slick';
 import './poster.css'
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -79,6 +80,12 @@ const Poster = () => {
     ]
   };
 
+  const navigate = useNavigate();
+
+    const handleBack = ()=>{
+      navigate(-1);
+    }
+
 
   
   return (
@@ -86,6 +93,10 @@ const Poster = () => {
         <div className='flex justify-center items-center mt-[18vh]'>
           <h2 className='text-2xl mb-[100px] font-[500]'>Poster <span className='font-[500] p-1 rounded'>Designing</span></h2>
         </div>
+
+        <div className="arrow">
+        <button onClick={handleBack}><i class='bx bx-left-arrow-alt'></i></button>
+      </div>
 
         <div className="slider-container mx-[70px]">
             <Slider {...settings}>
