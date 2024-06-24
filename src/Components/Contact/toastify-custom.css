@@ -1,0 +1,23 @@
+/* toastify-custom.css */
+@media (max-width: 600px) {
+    .Toastify__toast-container {
+      width: 60% !important;
+      top: 20% !important;
+      left: 5% !important;
+      right: 5% !important;
+    }
+  
+    .Toastify__toast {
+      font-size: 14px !important;
+    }
+  
+    .Toastify__toast-body {
+      padding: 10px !important;
+    }
+  
+    .Toastify__close-button {
+      width: 20px !important;
+      height: 20px !important;
+    }
+  }
+  

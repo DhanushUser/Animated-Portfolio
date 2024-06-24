@@ -8,7 +8,27 @@ import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import Dresume from '../../assets/DhanushResume.pdf'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './toastify-custom.css'; // Import custom CSS
+
 const Hero = () => {
+
+  
+
+  const notify = () => {
+    toast.success('Resume downloaded', {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
+  }
+
   return (
     <div className="hero-bg" id="home">
       <div className="hero lg:pt-[15vh] md:pt-[15vh] sm:pt-0 ld:flex md:flex sm:block  justify-center items-center lg:mx-20 md:mx-14 sm:mx-10 mb-[15rem]">
@@ -23,10 +43,10 @@ const Hero = () => {
         <div className="hero-right flex-col  lg:w-1/2 md:w-1/2 sm:w-full ">
           <h1 className="text-5xl mb-3">I'm Dhanush</h1>
           <h3 className="text-2xl mb-3">Frontend Developer</h3>
-          <p>Strong foundation in ReactJs and Javascript</p>
+          <p>Strong foundation in ReactJs and Javascript !</p>
 
           <div className="resume mt-[20px]">
-            <a onClick={()=>alert('Proceed to Download')} href={Dresume} download='Dhanush_resume'>
+            <a onClick={notify} href={Dresume} download='Dhanush_resume'>
               <button className="btn ">Resume</button>
             </a>
             <a href="#contact"><button className="btn mx-2">Contact</button></a>
@@ -38,6 +58,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <ToastContainer theme="dark"/>
       <About />
       <Project />
       <Skills />
