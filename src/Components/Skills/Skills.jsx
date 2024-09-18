@@ -3,7 +3,7 @@ import "./skills.css";
 // import skills_data from "../../assets/services_data";
 import drawing from "../../assets/drawing.jpg";
 import camera from "../../assets/camera.jpg";
-import poster from "../../assets/poster.jpg";
+import poster from "../../assets/p-1.jpg";
 import web from "../../assets/web.jpg";
 import editing from "../../assets/editing.jpg";
 import api from "../../assets/api.jpg";

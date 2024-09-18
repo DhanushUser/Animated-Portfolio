@@ -9,8 +9,9 @@
 }
 .slider-container img{
     border-radius: 50px;
-    width: 200px;
+    width: 250px;
     height: 250px;
+    object-fit: cover;
     
 }
 

@@ -5,6 +5,7 @@
         opacity: 0.80;
         background-size: cover !important;
         background-position: center !important;
+        object-fit: cover;
         
     }
 }

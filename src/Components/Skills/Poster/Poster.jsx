@@ -1,8 +1,18 @@
 import React from 'react'
-import post_1 from '../../../assets/post-1.png'
-import post_2 from '../../../assets/post-2.png'
-import post_3 from '../../../assets/post-3.jpg'
-import post_4 from '../../../assets/post-4.png'
+import post_1 from '../../../assets/pizza.png'
+import post_2 from '../../../assets/food-1.jpg'
+import post_3 from '../../../assets/dosa.jpg'
+import post_4 from '../../../assets/dawan.png'
+import post_5 from '../../../assets/hope.jpg'
+import post_6 from '../../../assets/food-2.png'
+import post_7 from '../../../assets/burger.jpg'
+import post_8 from '../../../assets/home.png'
+import post_9 from '../../../assets/photo.png'
+import post_10 from '../../../assets/shoe.jpg'
+import post_11 from '../../../assets/singer.png'
+import post_12 from '../../../assets/dress.png'
+import post_13 from '../../../assets/gym-1.png'
+import post_14 from '../../../assets/gym-2.png'
 import Slider from 'react-slick';
 import './poster.css'
 import { useNavigate } from 'react-router-dom'
@@ -112,8 +122,40 @@ const Poster = () => {
               <div>
                 <img src={post_4} alt="" />
               </div>
-              
-              
+              <div>
+                <img src={post_5} alt="" />
+              </div>
+              <div>
+                <img src={post_6} alt="" />
+              </div>
+              <div>
+                <img src={post_7} alt="" />
+              </div>
+              <div>
+                <img src={post_8} alt="" />
+              </div>
+              <div>
+                <img src={post_9} alt="" />
+              </div>
+              <div>
+                <img src={post_10} alt="" />
+              </div>
+              <div>
+                <img src={post_11} alt="" />
+              </div>
+              <div>
+                <img src={post_12} alt="" />
+              </div>
+              <div>
+                <img src={post_12} alt="" />
+              </div>
+              <div>
+                <img src={post_13} alt="" />
+              </div>
+              <div>
+                <img src={post_14} alt="" />
+              </div>
+
             </Slider>
     </div>
         

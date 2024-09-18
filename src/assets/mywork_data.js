@@ -2,9 +2,9 @@
 import youtube from '../assets/youtube.png'
 import port from '../assets/port.png'
 import educity from '../assets/educity.png'
-import elec from '../assets/elec.png'
 import tomato from '../assets/tomato.png'
-import coffee from '../assets/coffee.png'
+import crypto from '../assets/crypto.png'
+import spotify from '../assets/spotify.png'
 
 const mywork_data = [
     {
@@ -23,10 +23,10 @@ const mywork_data = [
     },
     {
         w_no:3,
-        w_name:"Electronics Website",
-        w_img:elec,
+        w_name:"Spotify clone",
+        w_img:spotify,
         w_des: 'Fully functional electronics website using reactJs and tailwind CSS . It is responsive and user friendly',
-        w_link: 'https://apparelelectronics.netlify.app/',
+        w_link: 'https://spotifyclonebydhanush.netlify.app/',
     },
     {
         w_no:4,
@@ -44,10 +44,10 @@ const mywork_data = [
     },
     {
         w_no:6,
-        w_name:"Cafe shop Website",
-        w_img:coffee,
+        w_name:"Crypto Currency Website",
+        w_img:crypto,
         w_des: 'Desire cafe shop using reactJs and bootstrap. It is responsive and user friendly',
-        w_link: 'https://desirecafeshop.netlify.app/',
+        w_link: 'https://cryptocurrencybydhanush.netlify.app/',
     }
 ]
  

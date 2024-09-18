@@ -23,7 +23,7 @@
     border-radius: 50%;
     z-index: 50;
     text-align: center;
-    transition: .5s;
+    transition: .5s !important;
 }
 .opacity{
     display: none;

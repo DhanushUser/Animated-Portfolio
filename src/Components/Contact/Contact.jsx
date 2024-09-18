@@ -3,6 +3,7 @@ import './contact.css';
 import './toastify-custom.css'; // Import custom CSS
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { BeatLoader } from 'react-spinners';
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -76,7 +77,7 @@ const Contact = () => {
   return (
     <div className='contact my-[150px] mx-10' id='contact'>
       <div className="flex justify-center mb-20 ">
-        <h1 className="text-3xl font-[600] mb-[50px]">Get in <span className="p-2 rounded ml-1">Touch</span></h1>
+        <h1 className="text-3xl font-[600] mb-[50px]">Get in <span className="span p-2 rounded ml-1">Touch</span></h1>
       </div>
 
       <div className='total-side lg:flex md:flex sm:block'>
@@ -116,13 +117,13 @@ const Contact = () => {
             </div>
             <div className='btns'>
               <button className='btn' type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Sending..." : "Submit Now"}
+                {isSubmitting ? <BeatLoader color="#36d7b7" /> : "Submit Now"}
               </button>
             </div>
           </form>
         </div>
       </div>
-
+      
       <ToastContainer />
     </div>
   );

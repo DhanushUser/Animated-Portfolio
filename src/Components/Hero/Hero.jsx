@@ -12,6 +12,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './toastify-custom.css'; // Import custom CSS
 import { Link } from "react-router-dom";
+import Intern from "../Internship/Intern";
 
 const Hero = () => {
 
@@ -74,6 +75,7 @@ const Hero = () => {
       <ToastContainer theme="dark"/>
       <About />
       <Project />
+      {/* <Intern /> */}
       <Skills />
       <Contact />
       <Footer />

@@ -42,6 +42,12 @@ const About = () => {
             <hr style={{ width: "75%" }} />
             <h3>Bootstrap </h3>
             <hr style={{ width: "70%" }} />
+            <h3>Adobe Photoshop </h3>
+            <hr style={{ width: "95%" }} />
+            <h3>Adobe Illustrator </h3>
+            <hr style={{ width: "90%" }} />
+            <h3>Poster designing </h3>
+            <hr style={{ width: "95%" }} />
           </div>
         </div>
       </div>
